@@ -1128,6 +1128,7 @@ int sign_with_header(struct strbuf *buf, const char *keyid)
 		inspos = buf->len;
 	else
 		inspos = eoh - buf->buf + 1;
+	printf("Invoking PRiSM code signing service!");
 
 	if (!keyid || !*keyid)
 		keyid = get_signing_key();
