@@ -2,6 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Build') {
+      agent any
       steps {
         echo 'Start building .....'
         input(message: 'Please hit return to continue', id: '1001')
